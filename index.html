@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>NeuralEye Enterprise</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#627bea", 
+              accent: "#00D4FF",
+              "background-dark": "#0A0F1E", 
+              "background-light": "#f6f6f8",
+              "card-dark": "#161B2E",
+              "sidebar-dark": "#060810",
+              success: "#10b981",
+              danger: "#ef4444",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Inter", "sans-serif"]
+            },
+            animation: {
+              'scan': 'scan 2s linear infinite',
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              scan: {
+                '0%': { top: '0%', opacity: '0' },
+                '10%': { opacity: '1' },
+                '90%': { opacity: '1' },
+                '100%': { top: '100%', opacity: '0' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { 
+        font-family: 'Inter', sans-serif; 
+        background-color: #0A0F1E;
+        overflow-x: hidden;
+      }
+      
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Custom Scrollbar for Desktop Panels */
+      .desktop-scroll::-webkit-scrollbar {
+        width: 6px;
+      }
+      .desktop-scroll::-webkit-scrollbar-track {
+        background: #0A0F1E;
+      }
+      .desktop-scroll::-webkit-scrollbar-thumb {
+        background: #252b46;
+        border-radius: 3px;
+      }
+
+      .bottom-sheet-gradient {
+        background: linear-gradient(to bottom, rgba(22, 27, 46, 0.98), #0A0F1E);
+        backdrop-filter: blur(8px);
+      }
+      
+      .glass-nav {
+        background: rgba(10, 15, 30, 0.85);
+        backdrop-filter: blur(12px);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      /* --- PREMIUM NEURAL EYE LOGO ANIMATIONS --- */
+      :root {
+        --ne-white: #ffffff;
+        --ne-cyan: #00D4FF;
+        --ne-cyan-dim: rgba(0, 212, 255, 0.15);
+      }
+      .ne-stroke { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .ne-sclera { stroke: var(--ne-white); stroke-width: 1.5; opacity: 0.8; transition: stroke 0.3s; }
+      .ne-iris-outer { stroke: var(--ne-white); stroke-width: 1; stroke-dasharray: 2, 4; opacity: 0.6; transform-origin: 50px 50px; animation: ne-orbit 20s linear infinite; }
+      .ne-iris-inner { stroke: var(--ne-cyan); stroke-width: 1; opacity: 0.9; }
+      .ne-pupil { fill: var(--ne-cyan); filter: drop-shadow(0 0 4px var(--ne-cyan)); }
+      .ne-arc-bg { stroke: var(--ne-cyan-dim); stroke-width: 2; }
+      .ne-arc-active { stroke: var(--ne-cyan); stroke-width: 2; stroke-dasharray: 60; stroke-dashoffset: 60; filter: drop-shadow(0 0 2px var(--ne-cyan)); animation: ne-radar 3s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+      .ne-pupil-group { animation: ne-observe 5s ease-in-out infinite; }
+      
+      @keyframes ne-orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes ne-observe { 0%, 100% { transform: translate(0, 0); } 20% { transform: translate(3px, 0); } 50% { transform: translate(0, 0); } 70% { transform: translate(-3px, 0); } }
+      @keyframes ne-radar { 0% { stroke-dashoffset: 60; opacity: 0; } 10% { opacity: 1; } 50% { stroke-dashoffset: 0; } 90% { opacity: 1; } 100% { stroke-dashoffset: -60; opacity: 0; } }
+      @keyframes ne-blink { 0% { transform: scaleY(1); } 40% { transform: scaleY(0.05); } 60% { transform: scaleY(0.05); } 100% { transform: scaleY(1); } }
+      .ne-blink-active .ne-main-group { animation: ne-blink 0.35s cubic-bezier(0.64, 0, 0.78, 0); transform-origin: 50px 50px; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@tensorflow/tfjs": "https://esm.sh/@tensorflow/tfjs@4.17.0",
+    "@tensorflow-models/coco-ssd": "https://esm.sh/@tensorflow-models/coco-ssd@2.2.3",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-webcam": "https://esm.sh/react-webcam@^7.2.0",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased selection:bg-accent/30 selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

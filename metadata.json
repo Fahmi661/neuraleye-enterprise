@@ -1,0 +1,7 @@
+{
+  "name": "NeuralEye Enterprise",
+  "description": "Browser-based enterprise object detection using TensorFlow.js with zero-latency edge computing.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
