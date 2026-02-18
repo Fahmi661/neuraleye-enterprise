@@ -1,15 +1,10 @@
 <div align="center">
 
-```
-███╗   ██╗███████╗██╗   ██╗██████╗  █████╗ ██╗     ███████╗██╗   ██╗███████╗
-████╗  ██║██╔════╝██║   ██║██╔══██╗██╔══██╗██║     ██╔════╝╚██╗ ██╔╝██╔════╝
-██╔██╗ ██║█████╗  ██║   ██║██████╔╝███████║██║     █████╗   ╚████╔╝ █████╗  
-██║╚██╗██║██╔══╝  ██║   ██║██╔══██╗██╔══██║██║     ██╔══╝    ╚██╔╝  ██╔══╝  
-██║ ╚████║███████╗╚██████╔╝██║  ██║██║  ██║███████╗███████╗   ██║   ███████╗
-╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝   ╚══════╝
-```
+<br/>
 
-### **Enterprise-Grade Real-Time Object Detection — Runs Entirely In Your Browser**
+# 👁️ NeuralEye Enterprise
+
+### Enterprise-Grade Real-Time Object Detection — Runs Entirely In Your Browser
 
 <br/>
 
@@ -23,6 +18,8 @@
 <br/>
 
 > *"The future of perception — zero latency, zero compromise, zero server-side footprint."*
+
+<br/>
 
 </div>
 
@@ -60,18 +57,18 @@ Built for speed, security, and scale.
 
 ```
 neuraleye-enterprise/
-├── 📄 index.html               # Entry point + Tailwind config + custom CSS
-├── 📄 index.tsx                # React root renderer
-├── 📄 App.tsx                  # View router (LANDING → DASHBOARD → ANALYTICS → PDF)
-├── 📄 types.ts                 # TypeScript interfaces & enums
+├── 📄 index.html                  # Entry point + Tailwind config + custom CSS
+├── 📄 index.tsx                   # React root renderer
+├── 📄 App.tsx                     # View router (LANDING → DASHBOARD → ANALYTICS → PDF)
+├── 📄 types.ts                    # TypeScript interfaces & enums
 │
 ├── components/
-│   ├── 🎯 ObjectDetector.tsx   # Webcam + TF.js inference loop + canvas overlay
-│   ├── 🖥️  Dashboard.tsx        # Main detection view with live feed
+│   ├── 🎯 ObjectDetector.tsx      # Webcam + TF.js inference loop + canvas overlay
+│   ├── 🖥️  Dashboard.tsx           # Main detection view with live feed
 │   ├── 📊 AnalyticsDashboard.tsx  # Charts, KPIs, class breakdown
-│   ├── 📋 DetectionLogList.tsx  # Real-time scrollable detection log
-│   ├── 📄 PDFReport.tsx        # Report generation view
-│   └── 🏠 LandingPage.tsx      # Marketing landing with animated logo
+│   ├── 📋 DetectionLogList.tsx    # Real-time scrollable detection log
+│   ├── 📄 PDFReport.tsx           # Report generation view
+│   └── 🏠 LandingPage.tsx         # Marketing landing with animated logo
 │
 ├── 📦 package.json
 ├── ⚙️  vite.config.ts
@@ -180,7 +177,7 @@ NeuralEye uses **COCO-SSD** (`lite_mobilenet_v2` base) — a fast, lightweight o
 ```
 Frontend Framework  →  React 19 + TypeScript 5.8
 Build Tool          →  Vite 6.2
-Styling             →  Tailwind CSS (CDN) + Custom CSS
+Styling             →  Tailwind CSS + Custom CSS
 AI / ML             →  TensorFlow.js 4.17 + COCO-SSD 2.2.3
 Camera              →  react-webcam 7.2
 Charts              →  Recharts 3.7
@@ -210,12 +207,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <br/>
 
-```
-  ◉  BUILT WITH PRECISION
-```
-
-*Designed and developed with care.*
-*System architecture, prompt engineering & UI direction by* **@your-username**
+**Built with precision. Designed with intent.**
 
 <br/>
 
@@ -225,7 +217,10 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <br/>
 
-*I am a prompt engineer — I craft system architectures, UI/UX direction,*
-*and AI model integration pipelines through precision prompting.*
+*System architecture, UI/UX direction & AI integration pipeline by* **@your-username**
+<br/>
+*— I am a prompt engineer*
+
+<br/>
 
 </div>
